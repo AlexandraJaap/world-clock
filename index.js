@@ -18,6 +18,27 @@ function updateTime() {
 
   dubaiDateElement.innerHTML = dubaiTime.format("MMMM Do YYYY");
   dubaiTimeElement.innerHTML = dubaiTime.format("h:mm:ss [<small>]A[</small>]");
+
+  //Amsterdam
+  let amsterdamElement = document.querySelector("#amsterdam");
+  let amsterdamDateElement = amsterdamElement.querySelector(".date");
+  let amsterdamTimeElement = amsterdamElement.querySelector(".time");
+  let amsterdamTime = moment().tz("Europe/Amsterdam");
+
+  amsterdamDateElement.innerHTML = amsterdamTime.format("MMMM Do YYYY");
+  amsterdamTimeElement.innerHTML = amsterdamTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
+  //Bogotá
+  let bogotaElement = document.querySelector("#bogota");
+  let bogotaDateElement = bogotaElement.querySelector(".date");
+  let bogotaTimeElement = bogotaElement.querySelector(".time");
+  let bogotaTime = moment().tz("America/Bogota");
+
+  bogotaDateElement.innerHTML = bogotaTime.format("MMMM Do YYYY");
+  bogotaTimeElement.innerHTML = bogotaTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 }
 
 function updateCity(event) {

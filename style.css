@@ -1,11 +1,16 @@
 body {
-  background-color: #f9f7fe;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/397/original/world-map-gbb4391485_1280.png?1676286108");
+  background-repeat: no-repeat;
+  background-size: 100%;
   font-family: sans-serif;
 }
 
 h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 42px;
+}
+h1.hover {
+  transform: scale(2);
 }
 
 h2 {
